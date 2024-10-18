@@ -11,7 +11,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     private void Awake()
     {
         if(PhotonNetwork.IsConnected)
+        {
             canvas.gameObject.SetActive(false);
+        }
     }
 
     public void Connect()
